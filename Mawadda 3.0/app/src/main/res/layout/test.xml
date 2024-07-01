@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MatchesActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/menu_background"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_curve"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home"
+            android:tint="#000000"
+            android:contentDescription="@string/home" />
+
+        <ImageButton
+            android:id="@+id/likeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_curve"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_heart"
+            android:onClick="goToMatches"
+            android:tint="#000000"
+            android:contentDescription="@string/like" />
+
+        <ImageButton
+            android:id="@+id/messagesButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_curve"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_messages"
+            android:tint="#000000"
+            android:contentDescription="@string/messages" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_curve"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_profile"
+            android:tint="#000000"
+            android:onClick="goToSettings"
+            android:contentDescription="@string/profile" />
+    </LinearLayout>
+</LinearLayout>

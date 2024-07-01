@@ -1,0 +1,6 @@
+<!-- res/drawable/chat_bubble_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="10dp" /> <!-- Adjust radius to control corner roundness -->
+    <solid android:color="#EAEAEA" /> <!-- Background color of the chat bubble -->
+</shape>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mawadda3_0">
+
+    <!-- Permissions, application settings, etc. -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/mawadda"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mawadda"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mawadda24"
+        tools:targetApi="31">
+
+        <!-- Declare activities here -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <!-- Intent filter for launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeActivity" />
+
+        <activity android:name=".SelfInfoActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".MatchesActivity" />
+        <activity android:name=".ChatActivity" />\
+        <activity android:name=".FilterActivity" />
+
+        <!-- Other components like services, receivers, etc. if any -->
+
+    </application>
+
+</manifest>

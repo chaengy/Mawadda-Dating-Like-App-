@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Horizontal bar -->
+    <View
+        android:id="@+id/horizontalBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tajuk"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/tajuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Please Enter Your Information"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lobster" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tajuk"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/abyss"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Join our Muslim dating app today to connect with like-minded individuals!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSubtitle"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/black"
+        android:fontFamily="@font/abyss"
+        android:hint="Your name"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/black"
+        android:fontFamily="@font/abyss"
+        android:hint="Your Age"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/hobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_marginTop="0dp"
+        android:hint="Your Hobby"
+        android:fontFamily="@font/abyss"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hobby"
+        android:layout_marginTop="0dp"
+        android:hint="Your Education"
+        android:fontFamily="@font/abyss"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/marriagetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/education"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/abyss"
+            android:padding="16dp"
+            android:text="Your Marriage Plan"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            tools:ignore="NotSibling" />
+
+    <RadioGroup
+        android:id="@+id/marriagePlanRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/marriagetext"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+
+        <RadioButton
+            android:id="@+id/planSoonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soon"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/planLaterRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Than 1 Year"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/planNotSureRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Than 3 Years"
+            android:textSize="18sp"
+            />
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_below="@+id/marriagetext"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/login_button_background"
+        android:fontFamily="@font/abyss"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

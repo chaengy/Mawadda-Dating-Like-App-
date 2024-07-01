@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mawadda</string>
+    <string name="dislike">dislike</string>
+    <string name="like">like</string>
+    <string name="profile">profile</string>
+    <string name="messages">messages</string>
+    <string name="home">home</string>
+    <string name="back">back</string>
+    <string name="filter">filter</string>
+    <string name="back_button_description">go back</string>
+    <string name="welcome_to_mawadda">Welcome To Mawadda</string>
+    <string name="let_s_goooooo">Get Started</string>
+    <string name="mainpage_background">background</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="underlined_text">Don\'t have an account? Create one now!!</string>
+
+
+</resources>

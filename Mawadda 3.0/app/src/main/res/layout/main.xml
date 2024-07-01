@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainpage_background"
+        android:contentDescription="@string/mainpage_background"/>
+
+    <!-- Semi-transparent overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000" /> <!-- Adjust the transparency here -->
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="50dp"> <!-- Adjust this value to move up or down -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:text="@string/welcome_to_mawadda"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:fontFamily="@font/josephsophia"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="Your Spouse in Halal Way"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/abyss"/><!-- Correct placement of fontFamily attribute -->
+
+        <Button
+            android:id="@+id/getStartedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/let_s_goooooo"
+            android:background="@drawable/login_button_background"
+            android:textSize="20sp"
+            android:minHeight="48dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"/>
+    </LinearLayout>
+</FrameLayout>
